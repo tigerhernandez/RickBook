@@ -27,7 +27,7 @@
 </head>
 
 <body>
-
+<div class="jumbotron big-banner" style="height:1000px; padding-top:150px;"> 
 <div class="container">
 
     <form method="POST" action="${contextPath}/login" class="form-signin">
@@ -44,7 +44,7 @@
             <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
             <h4 class="text-center"><a href="${contextPath}/registration">Create an account</a></h4>
         </div>
-
+</div>
     </form>
 
 </div>
