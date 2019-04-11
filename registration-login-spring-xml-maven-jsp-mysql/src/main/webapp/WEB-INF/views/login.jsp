@@ -13,7 +13,6 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Log in with your account</title>
 
     <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
@@ -25,13 +24,12 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
-<body>
 <div class="jumbotron big-banner" style="height:1000px; padding-top:150px;"> 
+<body>
 <div class="container">
 
     <form method="POST" action="${contextPath}/login" class="form-signin">
-        <h2 class="form-heading">Log in</h2>
+        <h2 class="form-heading">Aww geez, log in please.</h2>
 
         <div class="form-group ${error != null ? 'has-error' : ''}">
             <span>${message}</span>
