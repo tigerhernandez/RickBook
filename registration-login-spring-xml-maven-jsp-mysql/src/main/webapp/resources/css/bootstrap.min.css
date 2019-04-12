@@ -12,7 +12,10 @@ html {
 body {
     margin: 0
 }
-
+.big-banner {
+    background-image: url("../../resources/images/logIn.png");
+    background-size:100% 100%;
+}
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
     display: block
 }
@@ -1365,8 +1368,9 @@ button, input, select, textarea {
 }
 
 a {
-    color: #337ab7;
-    text-decoration: none
+    color: #0011f5;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 a:focus, a:hover {
@@ -1483,7 +1487,9 @@ hr {
 }
 
 .h2, h2 {
-    font-size: 30px
+    font-size: 30px;
+    color: #0011f5;
+    font-weight: bold;
 }
 
 .h3, h3 {
@@ -3473,7 +3479,8 @@ a.btn.disabled, fieldset[disabled] a.btn {
 .btn-primary {
     color: #fff;
     background-color: #337ab7;
-    border-color: #2e6da4
+    border-color: #2e6da4;
+    background-image:url("../../resources/images/portal.jpg");
 }
 
 .btn-primary.focus, .btn-primary:focus {
