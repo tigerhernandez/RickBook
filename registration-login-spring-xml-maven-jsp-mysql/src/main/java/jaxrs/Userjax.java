@@ -20,7 +20,7 @@ import javax.persistence.Table;
     @NamedQuery(name = "findOne", query = "SELECT u FROM User WHERE u.userId = :userId"))
 @Entity
 @Table(name = "USER")
-public class User {
+public class Userjax {
     @Id
     @Column(name = "USER_ID")
     private String userId;
