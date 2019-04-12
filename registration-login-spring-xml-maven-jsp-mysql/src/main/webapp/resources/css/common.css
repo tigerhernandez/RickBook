@@ -4,11 +4,6 @@ body {
     background-color: #eee;
 }
 
-.big-banner {
-    background-image: url("../images/RickandMortyLogIn.png");
-    background-size:100%;
-}
-
 .form-signin {
     max-width: 330px;
     padding: 15px;

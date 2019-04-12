@@ -24,9 +24,11 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<div class="jumbotron big-banner" style="height:1000px; padding-top:150px;"> 
+
 <body>
+<div class="jumbotron big-banner" style="height:1000px; padding-top:150px;"> 
 <div class="container">
+
 
     <form method="POST" action="${contextPath}/login" class="form-signin">
         <h2 class="form-heading">Aww geez, log in please.</h2>
