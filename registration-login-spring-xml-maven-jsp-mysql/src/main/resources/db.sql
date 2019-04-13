@@ -1,5 +1,5 @@
-CREATE DATABASE  IF NOT EXISTS `accounts`;
-USE `accounts`;
+CREATE DATABASE  IF NOT EXISTS `rickbookdb`;
+USE `rickbookdb`;
 --
 -- Table structure for table `role`
 --
