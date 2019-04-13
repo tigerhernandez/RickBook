@@ -51,7 +51,5 @@ public class Post {
 
     public void setTimeOfPost(String timeOfPost) {
         this.timeOfPost = timeOfPost;
-    }
-    
-    
+    }        
 }

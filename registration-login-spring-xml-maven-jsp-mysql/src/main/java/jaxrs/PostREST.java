@@ -31,7 +31,7 @@ import javax.ws.rs.Produces;
 @ApplicationScoped
 public class PostREST {
     
-//    @PersistenceContext(unitName = "rickBook")
+    @PersistenceContext(unitName = "rickBook")
     private EntityManager em;
     
     @Inject
@@ -40,8 +40,8 @@ public class PostREST {
     @GET
     @Produces({"application/json"})
     public List<Post> getAll() {
-        List<Post> post = em.createQuery("SELECT p FROM Post p").getResultList();
-        return post;
+        List<Post> posts = em.createQuery("SELECT p FROM Post p").getResultList();
+        return posts;
     }
 
     /**
@@ -49,19 +49,19 @@ public class PostREST {
      * @param id the Product Code (ID)
      * @return 
      */
-//    @GET
-//    @Path("{id}")
-//    @Produces({"application/json"})
-//    public List<Post> getOne(@PathParam("id") String id) {
-//        Query q = em.createNamedQuery("findPost");
-//        q.setParameter("post", id);
-//        List<Post> post = q.getResultList();
-//        return post;
-//    }
+    @GET
+    @Path("{id}")
+    @Produces({"application/json"})
+    public List<Post> getOne(@PathParam("id") String id) {
+        Query q = em.createNamedQuery("findPost");
+        q.setParameter("postId", id);
+        List<Post> posts = q.getResultList();
+        return posts;
+    }
 
     /**
      * Saves an object received as a JSON payload.
-     * @param productCode 
+     * @param post
      */
     @POST
     @Consumes("application/json")
@@ -85,7 +85,7 @@ public class PostREST {
     @Consumes("application/json")
     public void editOne(Post post, @PathParam("id") String id) {
         try {
-            Query p = em.createQuery("SELECT p FROM ProductCode p WHERE p.prodCode = :id");
+            Query p = em.createQuery("SELECT p FROM Post p WHERE p.postId = :id");
             p.setParameter("id", id);
             Post savedP = (Post) p.getSingleResult();
             savedP.setPostContent(post.getPostContent());

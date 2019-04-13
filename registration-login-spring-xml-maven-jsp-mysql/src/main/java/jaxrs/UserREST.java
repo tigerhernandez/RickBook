@@ -25,7 +25,7 @@ import javax.ws.rs.Produces;
 @ApplicationScoped
 public class UserREST {
     
-//     @PersistenceContext(unitName = "rickAndMorty")
+     @PersistenceContext(unitName = "rickBook")
     private EntityManager em;
     
     @Inject
