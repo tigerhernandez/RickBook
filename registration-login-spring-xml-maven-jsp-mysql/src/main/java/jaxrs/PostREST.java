@@ -31,7 +31,7 @@ import javax.ws.rs.Produces;
 @ApplicationScoped
 public class PostREST {
     
-    @PersistenceContext(unitName = "rickBook")
+//    @PersistenceContext(unitName = "rickBook")
     private EntityManager em;
     
     @Inject
