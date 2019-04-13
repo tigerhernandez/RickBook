@@ -17,7 +17,7 @@ import javax.persistence.Table;
  * @author c0592682
  */
 @NamedQueries(
-    @NamedQuery(name = "findOne", query = "SELECT p FROM postId p WHERE p.post = :post"))
+    @NamedQuery(name = "findPost", query = "SELECT p FROM postId p WHERE p.post = :post"))
 @Entity
 @Table(name = "POST")
 public class Post {

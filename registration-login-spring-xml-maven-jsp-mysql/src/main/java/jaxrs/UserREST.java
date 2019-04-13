@@ -35,7 +35,7 @@ public class UserREST {
     @Path("{id}")
     @Produces({"application/json"})
     public List<Post> getOne(@PathParam("id") String id) {
-        Query p = em.createQuery("findOne");
+        Query p = em.createQuery("findUser");
         p.setParameter("prodCode", id);
         List<Post> post = p.getResultList();
         return post;

@@ -17,7 +17,7 @@ import javax.persistence.Table;
  * @author c0592682
  */
 @NamedQueries (
-    @NamedQuery(name = "findOne", query = "SELECT u FROM User WHERE u.userId = :userId"))
+    @NamedQuery(name = "findUser", query = "SELECT u FROM User WHERE u.userId = :userId"))
 @Entity
 @Table(name = "USER")
 public class Userjax {

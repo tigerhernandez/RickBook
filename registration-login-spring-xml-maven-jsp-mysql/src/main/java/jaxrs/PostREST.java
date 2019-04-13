@@ -53,8 +53,8 @@ public class PostREST {
 //    @Path("{id}")
 //    @Produces({"application/json"})
 //    public List<Post> getOne(@PathParam("id") String id) {
-//        Query q = em.createNamedQuery("findOne");
-//        q.setParameter("prodCode", id);
+//        Query q = em.createNamedQuery("findPost");
+//        q.setParameter("post", id);
 //        List<Post> post = q.getResultList();
 //        return post;
 //    }
